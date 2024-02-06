@@ -1,0 +1,236 @@
+<html>
+<head>
+    <title>Online Shop</title>
+    <style>
+        :root {
+            --primary-color: #6a1b9a;
+            --secondary-color: #e1bee7;
+            --background-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .nav-link.active {
+            background-color: var(--secondary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-signup {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-login {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            padding: 40px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn-shop {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            font-size: 18px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid var(--primary-color);
+            padding: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .btn-cart {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+
+        .about-us {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-us h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 20px;
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+
+        .social-media {
+            display: flex;
+            list-style: none;
+        }
+
+        .social-link {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .social-icon {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Online Shop</a>
+        <nav class="nav-menu">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">Products</a>
+            <a href="#" class="nav-link">Cart</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <div class="buttons">
+            <button class="btn btn-signup">Sign Up</button>
+            <button class="btn btn-login">Login</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="intro">
+            <h1>Welcome to Online Shop</h1>
+            <p>We offer a wide range of products at affordable prices.</p>
+            <button class="btn btn-shop">Shop Now</button>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <p class="product-name">Product 1</p>
+                <p class="product-price">$10.00</p>
+                <button class="btn btn-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <p class="product-name">Product 2</p>
+                <p class="product-price">$20.00</p>
+                <button class="btn btn-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <p class="product-name">Product 3</p>
+                <p class="product-price">$30.00</p>
+                <button class="btn btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>We are a small team of passionate online sellers who want to provide the best shopping experience for our customers. We source our products from reliable suppliers and deliver them to your doorstep in no time. We also offer a 30-day money-back guarantee and a friendly customer service.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Online Shop. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#" class="social-link"><i class="fab fa-facebook social-icon"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter social-icon"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram social-icon"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
