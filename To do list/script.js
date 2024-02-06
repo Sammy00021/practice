@@ -1,15 +1,25 @@
 
-const inputField = document.getElementById("myInput");
-const taskList = document.getElementById("myUL");
+var taskInput = document.getElementById("task-input");
+var addButton = document.getElementById("add-button");
+var taskList = document.getElementById("task-list");
 
 function addTask() {
-    const taskText = inputField.value.trim();
-    if (taskText !== "") {
-        const listItem = document.createElement("li");
-        listItem.innerText = taskText;
-        taskList.appendChild(listItem);
-        inputField.value = "";
-    }
+  var task = taskInput.value;
+  if (task) {
+    var li = document.createElement("li");
+    var text = document.createTextNode(task);
+    li.appendChild(text);
+    taskList.appendChild(li);
+    taskInput.value = "";
+  }
 }
 
-document.querySelector(".addBtn").addEventListener("click", addTask);
+function deleteTask(event) {
+  var target = event.target;
+  var parent = target.parentElement;
+  parent.removeChild(target);
+}
+
+addButton.addEventListener("click", addTask);
+
+taskList.addEventListener("click", deleteTask);

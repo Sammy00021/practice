@@ -1,32 +1,59 @@
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    width: 500px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  input, button {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-#myInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.addBtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+  }
+  
+  input {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
     cursor: pointer;
-}
-
-
-#myUL {
-    list-style-type: none;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  ul {
+    margin-top: 20px;
     padding: 0;
-}
-
-#myUL li {
+    list-style-type: none;
+  }
+  
+  li {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  li:hover {
+    background-color: #eee;
+  }
+  
