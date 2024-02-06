@@ -1,0 +1,33 @@
+/* Style the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style the input field and button */
+#myInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.addBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style the to-do list items */
+#myUL {
+    list-style-type: none;
+    padding: 0;
+}
+
+#myUL li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
